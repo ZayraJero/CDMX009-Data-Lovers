@@ -1,4 +1,6 @@
-import { example } from './data.js';
+function nextContainer(idNextContainer, idHideContainer) {
+    
+    document.getElementById(idNextContainer).style.display = "block";
+    document.getElementById(idHideContainer).style.display ="none";
 
-console.log(example);
-
+}
