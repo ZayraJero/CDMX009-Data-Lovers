@@ -1,8 +1,9 @@
 html{
     background-image:url(../img/backg-font.jpg);
     background-size: cover;
-    background-position: center;
-    font-family: "Titillium Web";
+    background-repeat:no-repeat;
+    font-family:"Titillium Web";
+    
     }
 
     .container {
@@ -41,4 +42,9 @@ html{
 
     #portfolio{
         display: none;
+    }
+
+    #go-link{
+        height: 50px;
+        width: 50px;
     }
