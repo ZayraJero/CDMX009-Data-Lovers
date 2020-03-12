@@ -3,25 +3,67 @@
   <head>
     <meta charset="UTF-8">
     <title>PokémonGo</title>
-    <link rel="icon" type="image/png"  sizes="128x128" href="img/pokeball.png" />
+    <link rel="icon" type="image/png"  sizes="128x128" href="/img/pokeball.png" />
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet" />
     <script type="module" src="main.js"></script>
   </head>
   <body>
-      <div class="container" id="beginning">
+      <div class="container container-1" id="start-page">
         <img src="img/pokemon-go.png" id="logo">
         <img src="img/pokedex.png" id="pokedex">
         <h3 id="welcome">¿Estas listo para convertirte en <br> un verdadero maestro Pokémon?</h3>
-        <input type="image" onclick="nextContainer('portfolio','beginning')" img src="img/go-logo.png">
+        <input class="button-next" type="image" onclick="nextContainer('start-page','pokemon-page');" img src="img/go-logo.png" alt="Go" width="auto" height="50px">
       </div>
 
-      <div class="container2" id="portfolio">
-       <section>
-        
-      </section>
-      </div>
-    
+      <div class="container container-2" id="pokemon-page">
+       <!--<div class="wrapper">
+          <div class="pokedex-topbar">
+            <div class="left form-container">
+              <form action="" method="get">
+                <select name="region" id="select-region" autocomplete="off">
+                  <option value="todos" selected>Región</option>
+                  <option value="kanto">Kanto</option>
+                  <option value="johto" disabled="disabled">Johto</option>
+                  <option value="sinnoh" disabled="disabled">Sinnoh</option>
+                  <option value="Hoenn" disabled="disabled">Hoenn</option>
+                </select>
+                <select name="type" id="select-type" autocomplete="off">
+                  <option value="todos" selected>Tipo</option>
+                  <option value="water">Agua</option>
+                  <option value="fire">Fuego</option>
+                  <option value="grass">Planta</option>
+                  <option value="normal">Normal</option>
+                  <option value="electric">Electrico</option>
+                  <option value="psychic">Psiquico</option>
+                  <option value="water">Lucha</option>
+                  <option value="rock">Roca</option>
+                  <option value="ground">Tierra</option>
+                  <option value="flying">Volador</option>
+                  <option value="bug">Bicho</option>
+                  <option value="poison">Veneno</option>
+                  <option value="ghost">Fantasma</option>
+                  <option value="dragon">Dragon</option>
+                  <option value="ice">Hielo</option>
+                </select>
+                <input class="button-filter" type="image" src="img/go-logo.png" alt="Go" width="auto" height="50px">
+                </form>
+            </div>
+            <div class="right search-container">
+              <form action="" method="get">
+                <input type="text" name="nombrePokemon" placeholder="Buscar pokemon..." autocomplete="off">
+                <input class="button-filter" type="image" src="img/go-logo.png" alt="Go" width="auto" height="25px">
+              </form>
+              </div> 
+            </div> -->
+            <div class="pokemon-list"> 
+              <div class="main-container" id="pokemon-listing"></div> <!-- Contenedor de todos los pokemones-->
+            </div>
+          </div>
+          </div>
+          <div>
+            
+          </div>
       <footer>
 
     </footer>

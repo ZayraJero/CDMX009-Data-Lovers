@@ -1,0 +1,2 @@
+function openModal(url, widht) {
+}
