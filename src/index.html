@@ -7,17 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css" >
+    <!--<div id="root"></div>-->
+    <script type="module" src="main.js"></script>
     
  
   </head>
 
   <body>
+
+    <div class="container container-1" id="start-page">
+      <img src="../img/pokemon-go.png" id="logo">
+      <img src="../img/pokedex.png" id="pokedex">
+      <h3 id="welcome">¿Estas listo para convertirte en <br> un verdadero maestro Pokémon?</h3>
+      <input class="button-next" type="image" onclick="nextContainer('start-page','pokemon-page');" img src="../img/go-logo.png" alt="Go" width="auto" height="50px">
+    </div>
+
     <div class="logo">
       <img src="../img/pokedex-logo.png">
     </div>
 
+
     <header>
-       
+
+      <div class="container container-2" id="pokemon-page">
+
       <div class="container-bar" id="btn-menu">
 
 
@@ -27,7 +40,7 @@
               <ul>
                  <li><a href="#" id= "kanto">Kanto</a></li>
                
-               <div class="shadow">
+               <div class="shadow">x
                  <li><a>Johto</a></li>
                  <li><a>Sinnoh</a></li>
                  <li><a>Hoenn</a></li>
@@ -71,6 +84,7 @@
           
         </form>
         </div>
+      </div>
 
     </div>
      
@@ -79,11 +93,17 @@
     
     </section>
 
-    <div id="root"></div>
-    <script type="module" src="main.js"></script>
+    <div class="pokemon-list"> 
+      <div class="main-container" id="pokemon-listing"></div> <!-- Contenedor de todos los pokemones-->
+    </div>
+
+
+    
 
     <script src="data.js"></script>
     <script src="main.js"></script>
 
+    
+    
   </body>
 </html>
