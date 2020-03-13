@@ -1,125 +1,127 @@
 *{
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-      background-image: url("../img/backg-font.jpg");
-      font-family: "menlo";
-  }
-  
-  .container-bar {
-    display: flex;
-    text-align:center;
-    justify-content:center;
-    width: 100%;
-    background: #d82b2e;
-    position:absolute;
-    font-size: 20px;
-    align-content:space-between; 
-  }
-  
-  .container-bar a {
-    display: inline-block;
-    padding: 15px 120px 0px 0px;
-  }
-  
-  .container-bar ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    position: relative;
-    display: flex;
-    text-align:center;
-  }
-  
-  .container-bar ul li a{
-    display: block;
-    color: white;
-    text-decoration: none;
-    width: 150px;
-  }
-  
-  .container-bar ul after{
-    content: ""; 
-    clear:both;
-    display:block;
-  }
-  
-  .container-bar ul li {
-    float: left;
-    list-style:none;
-  }
-  
-  .container-bar ul ul {
-    display: none;
-  }
-  
-  .container-bar ul li:hover > ul {
-    display: block;
-  }
-  
-  .container-bar ul li:hover {
-    background: #d82b2e;
-    transition: all 0.3s;
-  }
-  
-  .container-bar ul li:hover a{
-    color:white;
-  }
-  
-  .container-bar ul ul {
-    padding:0;
-    margin:0;
-    position: absolute; top:100%;
-  
-    background: rgb(216,43,46);
-      background: linear-gradient(90deg, rgba(216,43,46,0.7077205882352942) 0%, rgba(216,43,46,0.7077205882352942) 35%);  
-  }*/
-  
-  .container-bar ul ul li a {
-    padding:25px;
-    color: white;
-    width:300px;
-    text-align:left;
-  }
-  
-  .container-bar ul ul li a:hover {
-    color: #333199;
-    transition: all 0.3s;
-  
-    background: rgb(216,43,46);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background-image: url("../img/backg-font.jpg");
+    font-family: "menlo";
+}
+
+.container-bar {
+  display: flex;
+  text-align:center;
+  justify-content:center;
+  width: 100%;
+  background: #d82b2e;
+  position:absolute;
+  font-size: 20px;
+  align-content:space-between; 
+}
+
+.container-bar a {
+  display: inline-block;
+  padding: 15px 120px 0px 0px;
+}
+
+.container-bar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  display: flex;
+  text-align:center;
+}
+
+.container-bar ul li a{
+  display: block;
+  color: white;
+  text-decoration: none;
+  width: 150px;
+}
+
+.container-bar ul after{
+  content: ""; 
+  clear:both;
+  display:block;
+}
+
+.container-bar ul li {
+  float: left;
+  list-style:none;
+}
+
+.container-bar ul ul {
+  display: none;
+}
+
+.container-bar ul li:hover > ul {
+  display: block;
+}
+
+.container-bar ul li:hover {
+  background: #d82b2e;
+  transition: all 0.3s;
+}
+
+.container-bar ul li:hover a{
+  color:white;
+}
+
+.container-bar ul ul {
+  padding:0;
+  margin:0;
+  position: absolute; top:100%;
+
+  background: rgb(216,43,46);
     background: linear-gradient(90deg, rgba(216,43,46,0.7077205882352942) 0%, rgba(216,43,46,0.7077205882352942) 35%);  
-  }
-  
-  .container-bar shadow {
-    color: gainsboro;
-  
-    background: rgb(136,136,136);
-    background: linear-gradient(90deg, rgba(136,136,136,0.4023984593837535) 0%, rgba(138,138,138,0.5732668067226891) 0%);
-  }
-  
-  .logo-go {
-    text-align: right;
-  }
-  
-  .search_bar {
-      width: 15%;
-      float: right;
-      padding: 0px 0px;
-      box-sizing: border-box;
-      text-align: center;
-  }
-  
-  .search_bar input {
-      width: 100%;
-      height:auto;
-      padding: 0px 10px 0px 25px;
-      box-sizing: border-box;
-      height:25px;
-      
-      font-size: 14px;
-      font-family: "menlo";
-      color: #333199;
-      display: inline-block;
-  }
+}*/
+
+.container-bar ul ul li a {
+  padding:25px;
+  color: white;
+  width:300px;
+  text-align:left;
+}
+
+.container-bar ul ul li a:hover {
+  color: #333199;
+  transition: all 0.3s;
+
+  background: rgb(216,43,46);
+  background: linear-gradient(90deg, rgba(216,43,46,0.7077205882352942) 0%, rgba(216,43,46,0.7077205882352942) 35%);  
+}
+
+.container-bar shadow {
+  color: gainsboro;
+
+  background: rgb(136,136,136);
+  background: linear-gradient(90deg, rgba(136,136,136,0.4023984593837535) 0%, rgba(138,138,138,0.5732668067226891) 0%);
+}
+
+.logo-go {
+  text-align: right;
+}
+
+.search_bar {
+    width: 13%;
+    float: right;
+    padding: 0px 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.search_bar input {
+    width: 100%;
+    height:auto;
+    padding: 0px 10px 0px 40px;
+    box-sizing: border-box;
+    height:26px;
+    
+    font-size: 14px;
+    font-family: "menlo";
+    color: #333199;
+    display: inline-block;
+
+    background: #ffff url("../img/buscar-icon.png") no-repeat 9px center;
+}

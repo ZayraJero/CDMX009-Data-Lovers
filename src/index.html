@@ -18,13 +18,14 @@
 
     <header>
        
-      <div class="container-bar">
+      <div class="container-bar" id="btn-menu">
+
 
       <nav>
         <ul>
-           <li><a href="#">Región</a>
+           <li><a href="">Región</a>
               <ul>
-                 <li><a href="">Kanto</a></li>
+                 <li><a href="#" id= "kanto">Kanto</a></li>
                
                <div class="shadow">
                  <li><a>Johto</a></li>
@@ -34,24 +35,24 @@
                </ul>
               </li>
 
-           <li><a href="#">Tipo</a>
+           <li><a href="">Tipo</a>
                  <ul>
-                 <li><a href="">Ver todos</a></li>
-                 <li><a href="">Agua</a></li>
-                 <li><a href="">Bicho</a></li>
-                 <li><a href="">Dragón</a></li>
-                 <li><a href="">Eléctrico</a></li>
-                 <li><a href="">Fantasma</a></li>
-                 <li><a href="">Fuego</a></li>
-                 <li><a href="">Hielo</a></li>
-                 <li><a href="">Lucha</a></li>
-                 <li><a href="">Normal</a></li>
-                 <li><a href="">Hierba</a></li>
-                 <li><a href="">Psíquico</a></li>
-                 <li><a href="">Roca</a></li>
-                 <li><a href="">Tierra</a></li>
-                 <li><a href="">Veneno</a></li>
-                 <li><a href="">Volador</a></li>
+                 <li><a href="#" id="Ver todos">Ver todos</a></li>
+                 <li><a href="#" id="Water">Agua</a></li>
+                 <li><a href="#" id="Bug">Bicho</a></li>
+                 <li><a href="#" id="">Dragón</a></li>
+                 <li><a href="#" id="Electric">Eléctrico</a></li>
+                 <li><a href="#" id="Ghost">Fantasma</a></li>
+                 <li><a href="#" id="Fire">Fuego</a></li>
+                 <li><a href="#" id="Ice">Hielo</a></li>
+                 <li><a href="#" id="Fighting">Lucha</a></li>
+                 <li><a href="#" id="Normal">Normal</a></li>
+                 <li><a href="#" id="Grass">Hierba</a></li>
+                 <li><a href="#" id="Psychic">Psíquico</a></li>
+                 <li><a href="#" id="Rock">Roca</a></li>
+                 <li><a href="#" id="Ground">Tierra</a></li>
+                 <li><a href="#" id="Poison">Veneno</a></li>
+                 <li><a href="#" id="Flying">Volador</a></li>
                </ul>
           </li>
 
@@ -64,9 +65,11 @@
       </nav>
 
         <div class="search_bar">
-          <a href="#" class="search-btn"></a>
-          <input class="search-txt" type="text" id="barra" placeholder="Búsqueda..."> 
+          <form action="#" id="search" method="post" class="formulario">
+          <a class="search-btn"></a>
+          <input class="search-txt" type="text" id="barra" placeholder="Búsqueda..." class="src" autocomplete="off"> 
           
+        </form>
         </div>
 
     </div>
@@ -75,9 +78,6 @@
     </header>
     
     </section>
-
-  
-  
 
     <div id="root"></div>
     <script type="module" src="main.js"></script>
