@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <title>PokémonGO</title>
-    <link rel="icon" type="image/png"  sizes="128x128" href="../img/pokeball.png" />
+    <link rel="icon" type="image/png"  sizes="128x128" href="img/pokeball.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css" >
-    <!--<div id="root"></div>-->
+   
     <script type="module" src="main.js"></script>
     
  
@@ -16,23 +16,24 @@
   <body>
 
     <div class="container container-1" id="start-page">
-      <img src="../img/pokemon-go.png" id="logo">
-      <img src="../img/pokedex.png" id="pokedex">
+      <img src="img/pokemon-go.png" id="logo">
+      <img src="img/pokedex.png" id="pokedex">
       <h3 id="welcome">¿Estas listo para convertirte en <br> un verdadero maestro Pokémon?</h3>
-      <input class="button-next" type="image" onclick="nextContainer('start-page','pokemon-page');" img src="../img/go-logo.png" alt="Go" width="auto" height="50px">
+      <input class="button-next" type="image" onclick="nextContainer('start-page','pokemon-page');" img src="img/go-logo.png" alt="Go" width="auto" height="50px">
     </div>
+  
+  
 
-    <div class="logo">
-      <img src="../img/pokedex-logo.png">
-    </div>
-
-
-    <header>
-
+    <section>
       <div class="container container-2" id="pokemon-page">
 
-      <div class="container-bar" id="btn-menu">
+        <div class="logo">
+          <img src="img/pokedex-logo.png">
+        </div>
 
+      <!--Segunda parte menu-->
+
+      <div class="container-bar" id="btn-menu">
 
       <nav>
         <ul>
@@ -40,20 +41,21 @@
               <ul>
                  <li><a href="#" id= "kanto">Kanto</a></li>
                
-               <div class="shadow">x
+            <!--   <div class="shadow">
                  <li><a>Johto</a></li>
                  <li><a>Sinnoh</a></li>
-                 <li><a>Hoenn</a></li>
-                 </div>
+                 <li><a>Hoenn</a></li> 
+                 </div>-->
                </ul>
               </li>
 
-           <li><a href="">Tipo</a>
+           <li><a href="" id="typePokemon">Tipo</a>
+            
                  <ul>
-                 <li><a href="#" id="Ver todos">Ver todos</a></li>
+                 <li><a href="#" id="All">Ver todos</a></li>
                  <li><a href="#" id="Water">Agua</a></li>
                  <li><a href="#" id="Bug">Bicho</a></li>
-                 <li><a href="#" id="">Dragón</a></li>
+                 <li><a href="#" id="Dragon">Dragón</a></li>
                  <li><a href="#" id="Electric">Eléctrico</a></li>
                  <li><a href="#" id="Ghost">Fantasma</a></li>
                  <li><a href="#" id="Fire">Fuego</a></li>
@@ -67,15 +69,23 @@
                  <li><a href="#" id="Poison">Veneno</a></li>
                  <li><a href="#" id="Flying">Volador</a></li>
                </ul>
+            
           </li>
-
-           <li>
-             <a><input type="image" onclick=""() img src="../img/go-logo copia.png"  class="logo-go"></button></a>
-            </li>
-
-         </ul>
-      
+        </ul>
+        
       </nav>
+      
+           
+      <div class="logo-go">  
+        
+             <input type="image" onclick="filterData"('typePokemon') img src="img/go-logo copia.png"  class="logo-go"></button>
+            
+            </div>
+           
+          
+          
+        
+      
 
         <div class="search_bar">
           <form action="#" id="search" method="post" class="formulario">
@@ -86,22 +96,22 @@
         </div>
       </div>
 
-    </div>
+    
      
 
-    </header>
+    
     
     </section>
 
     <div class="pokemon-list"> 
       <div class="main-container" id="pokemon-listing"></div> <!-- Contenedor de todos los pokemones-->
     </div>
-
-
+  </div>
+  
     
 
-    <script src="data.js"></script>
-    <script src="main.js"></script>
+   <!--  <script src="data.js"></script>-->
+  <!--   <script src="main.js"></script>-->
 
     
     

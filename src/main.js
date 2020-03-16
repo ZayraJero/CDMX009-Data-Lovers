@@ -49,3 +49,42 @@ showAllPokemon();
 window.initial = initial;
 initial();
 
+
+//funcion lista tipo pokemon
+
+document.getElementById('typePokemon').addEventListener('change', (e) => {
+    const selectedIndex = e.currentTarget.selectedIndex;
+    if (selectedIndex === Ver) {
+      template(filterData(pokemon, 'All'));
+    } else if (selectedIndex === Agua) {
+        template(filterData(pokemon, 'Water'));
+    } else if (selectedIndex === Bicho) {
+      template(filterData(pokemon, 'Bug'));
+    } else if (selectedIndex === Dragón) {
+      template(filterData(pokemon, 'Dragon'));
+    } else if (selectedIndex === Eléctrico) {
+      template(filterData(pokemon, 'Electric'));
+    } else if (selectedIndex === Fantasma) {
+      template(filterData(pokemon, 'Ghost'));
+    } else if (selectedIndex === Fuego) {
+      template(filterData(pokemon, 'Fire'));
+    } else if (selectedIndex === Hielo) {
+      template(filterData(pokemon, 'Ice'));
+    } else if (selectedIndex === Lucha) {
+      template(filterData(pokemon, 'Fighting'));
+    } else if (selectedIndex === Normal) {
+      template(filterData(pokemon, 'Normal'));
+    } else if (selectedIndex === Hierva) {
+      template(filterData(pokemon, 'Grass'));
+    } else if (selectedIndex === Psíquico) {
+      template(filterData(pokemon, 'Psychic'));
+    } else if (selectedIndex === Roca) {
+      template(filterData(pokemon, 'Rock'));
+    } else if (selectedIndex === Tierra) {
+      template(filterData(pokemon, 'Ground'));
+    } else if (selectedIndex === Veneno) {
+      template(filterData(pokemon, 'Poison'));
+    } else if (selectedIndex === Volador) {
+      template(filterData(pokemon , 'Flying'));
+    }
+  });

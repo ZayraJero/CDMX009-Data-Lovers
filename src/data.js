@@ -8,6 +8,19 @@ import data from './data/pokemon/pokemon.js';
 
 // esta es una función de ejemplo
 
-export const example = () => {
-  return 'example';
-};
+
+
+
+const filterData = (data, condition) => {
+  let arrType = [];
+  for (let i = 0; i < data.length; i++) {
+    for (let x = 0; x < data[i].type.length; x++) {
+      if (data[i].type[x] === condition) {
+        arrType.push(data[i]);
+      }
+    }
+  }
+  return arrType;
+ };
+ 
+ export {sortData, filterData}

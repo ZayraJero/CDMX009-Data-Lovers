@@ -2,11 +2,20 @@
   margin: 0;
   padding: 0;
 }
+  
+html{
+  background-image:url(img/backg-font.jpg);
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  font-family:"menlo";
+  
+  }
 
-body {
-    background-image: url("../img/backg-font.jpg");
+/*body {
+    
     font-family: "menlo";
-}
+}*/
 
 .container-1 {
   display: flex;
@@ -28,8 +37,6 @@ body {
 #logo{
   height: 250px;
   width: 450px;
-  
-  
 }
 
 #welcome{
@@ -38,6 +45,7 @@ body {
   background-color: rgba(255, 4, 4, 0.596);
   padding: 30px;
   border-radius: 30px;
+  font-family: "menlo";
 }
 
 .container.container-1{
@@ -60,15 +68,21 @@ body {
   text-align:center;
   justify-content:center;
   width: 100%;
+  height: 10%;
   background: #d82b2e;
   position:absolute;
-  font-size: 20px;
+  font-size: 23px;
   align-content:space-between; 
 }
 
+
+
 .container-bar a {
-  display: inline-block;
-  padding: 15px 120px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding: 30px 100px 0px 0px;
+  
 }
 
 .container-bar ul {
@@ -85,6 +99,7 @@ body {
   color: white;
   text-decoration: none;
   width: 150px;
+  
 }
 
 .container-bar ul after{
@@ -122,18 +137,20 @@ body {
 
   background: rgb(216,43,46);
     background: linear-gradient(90deg, rgba(216,43,46,0.7077205882352942) 0%, rgba(216,43,46,0.7077205882352942) 35%);  
-}*/
+}
 
 .container-bar ul ul li a {
-  padding:25px;
+  padding:15px  50px;
   color: white;
-  width:300px;
-  text-align:left;
+  width:150px;
+  text-align:center;
+  font-size: 19px;
 }
 
 .container-bar ul ul li a:hover {
   color: #333199;
   transition: all 0.3s;
+  
 
   background: rgb(216,43,46);
   background: linear-gradient(90deg, rgba(216,43,46,0.7077205882352942) 0%, rgba(216,43,46,0.7077205882352942) 35%);  
@@ -147,23 +164,33 @@ body {
 }
 
 .logo-go {
-  text-align: right;
+  display: inline-block;
+ 
+ margin-top: -20px;
+ flex-direction: row;
+  position: center ;
+  justify-content: space-between;
 }
+  
+
 
 .search_bar {
     width: 13%;
     float: right;
-    padding: 0px 0px;
+    /*padding: -20px 0px;*/
     box-sizing: border-box;
     text-align: center;
+    margin-top: -40px;
+    display: flex;
+    flex-direction: row;
+    position: center;
 }
 
 .search_bar input {
     width: 100%;
-    height:auto;
     padding: 0px 10px 0px 40px;
     box-sizing: border-box;
-    height:26px;
+    height:25px;
     
     font-size: 14px;
     font-family: "menlo";
@@ -171,4 +198,43 @@ body {
     display: inline-block;
 
     background: #ffff url("../img/buscar-icon.png") no-repeat 9px center;
+}
+
+.pokemon-list{
+  padding: 130px 20px 20px 20px;
+  margin: 10px;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  padding-left: 160px;
+  
+}
+
+#pokemon-listing{
+  max-height: 500px;
+}
+
+.pokemon-item-container {
+  width: 20%;
+  height: 30%;
+  background-color: white;
+  border-radius: 10%;
+  margin-left: 40px;
+  margin-right: 100px;
+  margin-bottom: 40px;
+  padding: auto;
+
+}
+
+.pokemon-item-img {
+  padding-left: 30%;
+  padding-top: 8%;
+   
+}
+
+.pokemon-item-name {
+  padding-left: 35%;
 }
