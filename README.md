@@ -4,7 +4,7 @@ PokémonGo Pokédex es un sitio web que le permite al usuario encontrar de maner
 
 ## 2 . Historias de usuario
 
-<img src="img/usuarios.png">
+<img src="/src/img/usuarios.png">
 
 ## 3.  Investigación de usuario
 
