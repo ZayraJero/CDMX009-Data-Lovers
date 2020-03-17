@@ -21,6 +21,7 @@ function createPokemonItemHTML(pokemonObj) {
     <div class="pokemon-item-name">     
     <p class="pokemon-name" id="pokemon-${id}"> #${id} ${name}</p>
     </div> 
+    <button class="pokemon-button" data-pokemon-id="${id}">Ficha</button>
     </div>`; //plantilla de cadena de texto// 
 
     return HTML;
@@ -50,4 +51,61 @@ window.initial = initial;
 initial();
 
 
+
+
+function obtenerPokemon( elemento ) {
+    let id = Number( elemento.getAttribute('data-pokemon-id') );
+    return id - 1;
+  }
+  
+  
+  function showModal( evento ) {
+  
+    let pokemonID = obtenerPokemon( evento.currentTarget );
+    let dataPokemon;
+    let modalContent = document.getElementById('modal-content');
+    let modal = document.getElementById('modal')
+  
+    fetch(
+      'data/pokemon/pokemon.json').then( function (response) {
+      if (response.ok) {
+        return response.json();
+      }
+    }).then( function (response) {
+      dataPokemon = response.pokemon[pokemonID];
+      modalContent.innerHTML = `
+      <div class="left">
+      <p class="name">${dataPokemon.name}</p>
+      
+      <p>Altura promedio: ${dataPokemon.height}</p>
+      <p>Peso promedio: ${dataPokemon.weight}</p>
+      <p>Conteo de dulces: ${dataPokemon.candy_count}</p>
+      <p>Huevo: ${dataPokemon.egg}</p><br>
+      <p>Tipo: ${ dataPokemon.type.join(', ') }</p>
+      <p>Debilidades: ${dataPokemon.weaknesses.join(', ')}</p>
+      </div>
+      <div class="right">
+      <div class="image" img src="pokemon.js/img.js"</div>
+      </div>
+      `;
+    });
+  
+    modal.style.display = 'block';
+  
+  }
+  
+  let pokemonButton = document.querySelectorAll('.pokemon-button');
+  pokemonButton.forEach( elemento => {
+    elemento.addEventListener( 'click', showModal );
+  });
+
+
+
+  let span = document.getElementsByClassName("close")[0];
+
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  
 

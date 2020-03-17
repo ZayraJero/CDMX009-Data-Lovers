@@ -16,56 +16,96 @@
         <input class="button-next" type="image" onclick="nextContainer('start-page','pokemon-page');" img src="img/go-logo.png" alt="Go" width="auto" height="50px">
       </div>
 
+      
+
       <div class="container container-2" id="pokemon-page">
-       <!--<div class="wrapper">
-          <div class="pokedex-topbar">
-            <div class="left form-container">
-              <form action="" method="get">
-                <select name="region" id="select-region" autocomplete="off">
-                  <option value="todos" selected>Región</option>
-                  <option value="kanto">Kanto</option>
-                  <option value="johto" disabled="disabled">Johto</option>
-                  <option value="sinnoh" disabled="disabled">Sinnoh</option>
-                  <option value="Hoenn" disabled="disabled">Hoenn</option>
-                </select>
-                <select name="type" id="select-type" autocomplete="off">
-                  <option value="todos" selected>Tipo</option>
-                  <option value="water">Agua</option>
-                  <option value="fire">Fuego</option>
-                  <option value="grass">Planta</option>
-                  <option value="normal">Normal</option>
-                  <option value="electric">Electrico</option>
-                  <option value="psychic">Psiquico</option>
-                  <option value="water">Lucha</option>
-                  <option value="rock">Roca</option>
-                  <option value="ground">Tierra</option>
-                  <option value="flying">Volador</option>
-                  <option value="bug">Bicho</option>
-                  <option value="poison">Veneno</option>
-                  <option value="ghost">Fantasma</option>
-                  <option value="dragon">Dragon</option>
-                  <option value="ice">Hielo</option>
-                </select>
-                <input class="button-filter" type="image" src="img/go-logo.png" alt="Go" width="auto" height="50px">
-                </form>
+
+        <div class="logo">
+          <img src="img/pokedex-logo.png">
+        </div>
+    
+        <header>
+           
+          <div class="container-bar" id="btn-menu">
+    
+    
+          <nav>
+            <ul>
+               <li><a href="">Región</a>
+                  <ul>
+                     <li><a href="#" id= "kanto">Kanto</a></li>
+                   
+                   <div class="shadow">
+                     <li><a>Johto</a></li>
+                     <li><a>Sinnoh</a></li>
+                     <li><a>Hoenn</a></li>
+                     </div>
+                   </ul>
+                  </li>
+    
+               <li><a href="">Tipo</a>
+                     <ul>
+                     <li><a href="#" id="Ver todos">Ver todos</a></li>
+                     <li><a href="#" id="Water">Agua</a></li>
+                     <li><a href="#" id="Bug">Bicho</a></li>
+                     <li><a href="#" id="">Dragón</a></li>
+                     <li><a href="#" id="Electric">Eléctrico</a></li>
+                     <li><a href="#" id="Ghost">Fantasma</a></li>
+                     <li><a href="#" id="Fire">Fuego</a></li>
+                     <li><a href="#" id="Ice">Hielo</a></li>
+                     <li><a href="#" id="Fighting">Lucha</a></li>
+                     <li><a href="#" id="Normal">Normal</a></li>
+                     <li><a href="#" id="Grass">Hierba</a></li>
+                     <li><a href="#" id="Psychic">Psíquico</a></li>
+                     <li><a href="#" id="Rock">Roca</a></li>
+                     <li><a href="#" id="Ground">Tierra</a></li>
+                     <li><a href="#" id="Poison">Veneno</a></li>
+                     <li><a href="#" id="Flying">Volador</a></li>
+                   </ul>
+              </li>
+    
+               <li>
+                 <a><input type="image" onclick=""() img src="img/go-logo_copia.png"  class="logo-go"></button></a>
+                </li>
+    
+             </ul>
+          
+          </nav>
+    
+            <div class="search_bar">
+              <form action="#" id="search" method="post" class="formulario">
+              <a class="search-btn"></a>
+              <input class="search-txt" type="text" id="barra" placeholder="Búsqueda..." class="src" autocomplete="off"> 
+              
+            </form>
             </div>
-            <div class="right search-container">
-              <form action="" method="get">
-                <input type="text" name="nombrePokemon" placeholder="Buscar pokemon..." autocomplete="off">
-                <input class="button-filter" type="image" src="img/go-logo.png" alt="Go" width="auto" height="25px">
-              </form>
-              </div> 
-            </div> -->
+    
+        </div>
+         
+    
+        </header>
+        
+        </section>
+       
             <div class="pokemon-list"> 
               <div class="main-container" id="pokemon-listing"></div> <!-- Contenedor de todos los pokemones-->
+              
+
             </div>
           </div>
           </div>
-          <div>
             
           </div>
-      <footer>
 
+      
+      <footer>
+        <div class="modal" id="modal">
+          <div class="modal-font" id="modal-font">
+            <span class="close">x</span>
+            <div class="modal-content" id="modal-content"> 
+          </div>
+          </div>
+      </div>
     </footer>
     
   </body>
