@@ -1,31 +1,38 @@
 # PokémonGO Pokédex
 
 PokémonGo Pokédex es un sitio web que le permite al usuario encontrar de manera fácil y rápida todos los pokémones de la región de Kanto, por su tipo, debilidad y demás datos utiles.
+
 <br>
+
 ## 2 . Historias de usuario
 
-<img src= "../imagen/usuarios.png">
+<img src= "imagen/usuarios.png">
 <br>
+
 ## 3.  Investigación de usuario
 
 Pruebas de diseño UX
 <br>
+
 ### Sketch
 
-<img src= "../imagen/sketches.png">
+<img src= "imagen/sketches.png">
 
 En feedback se quitaron botones que no eran necesarios y se agrego un buscador.
 
 <br>
+
 ### Wireframe
 
-<img src= "../imagen/wireframe.png">
+<img src= "imagen/wireframe.png">
 
 <br>
+
 ### Prototipo
 
-<img src= "../imagen/prototipo.png">
+<img src= "imagen/prototipo.png">
 <br>
+
 ## 4. Objetivos de aprendizaje
 
 El objetivo principal de este proyecto es que, entendiendo las necesidades de
