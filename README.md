@@ -12,17 +12,17 @@ Pruebas de diseño UX
 
 ### Sketch
 
-<img src="img/sketches.jpg">
+<img src="/src/img/sketches.jpg">
 
 En feedback se quitaron botones que no eran necesarios y se agrego un buscador.
 
 ### Wireframe
 
-<img src="img/wireframe.png">
+<img src="/src/img/wireframe.png">
 
 ### Prototipo
 
-<img src="img/prototipo.png">
+<img src="/src/img/prototipo.png">
 
 ## 4. Objetivos de aprendizaje
 
