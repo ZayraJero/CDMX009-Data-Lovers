@@ -4,7 +4,7 @@ PokémonGo Pokédex es un sitio web que le permite al usuario encontrar de maner
 
 ## 2 . Historias de usuario
 
-<img src="imagen/usuarios.png">
+<img src="img/usuarios.png">
 
 ## 3.  Investigación de usuario
 
@@ -12,17 +12,17 @@ Pruebas de diseño UX
 
 ### Sketch
 
-<img src="imagen/sketches.jpg">
+<img src="img/sketches.jpg">
 
 En feedback se quitaron botones que no eran necesarios y se agrego un buscador.
 
 ### Wireframe
 
-<img src="imagen/wireframe.png">
+<img src="img/wireframe.png">
 
 ### Prototipo
 
-<img src="imagen/prototipo.png">
+<img src="img/prototipo.png">
 
 ## 4. Objetivos de aprendizaje
 
