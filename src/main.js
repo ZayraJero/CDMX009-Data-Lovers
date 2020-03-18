@@ -75,17 +75,17 @@ function obtenerPokemon( elemento ) {
       dataPokemon = response.pokemon[pokemonID];
       modalContent.innerHTML = `
       <div class="left">
-      <p class="name">${dataPokemon.name}</p>
-      
+      <p class="name">${dataPokemon.num} ${dataPokemon.name}</p>
       <p>Altura promedio: ${dataPokemon.height}</p>
       <p>Peso promedio: ${dataPokemon.weight}</p>
       <p>Conteo de dulces: ${dataPokemon.candy_count}</p>
       <p>Huevo: ${dataPokemon.egg}</p><br>
-      <p>Tipo: ${ dataPokemon.type.join(', ') }</p>
-      <p>Debilidades: ${dataPokemon.weaknesses.join(', ')}</p>
+      <p class="type"> Tipo: ${ dataPokemon.type.join(', ') }</p>
+      <p class="weaknesses">Debilidades: ${dataPokemon.weaknesses.join(', ')}</p>
       </div>
+      
       <div class="right">
-      <div class="image" img src="pokemon.js/img.js"</div>
+      <img class="image-pokemon" src="${dataPokemon.img}">
       </div>
       `;
     });
