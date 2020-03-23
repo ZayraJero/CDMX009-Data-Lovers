@@ -131,7 +131,7 @@ html{
       
         background: rgb(216,43,46);
           background: linear-gradient(90deg, rgba(216,43,46,0.7077205882352942) 0%, rgba(216,43,46,0.7077205882352942) 35%);  
-      }*/
+      }
       
       .container-bar ul ul li a {
         padding:15px 50px;
@@ -286,9 +286,9 @@ html{
 
       .close:hover,
       .close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+         color: #000;
+        text-decoration: none;
+        cursor: pointer;
     }
 
       .name{
