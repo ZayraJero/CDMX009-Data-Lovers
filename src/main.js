@@ -3,8 +3,8 @@ import data from './data/pokemon/pokemon.js';
 console.log(data);
 
 function nextContainer(idHideContainer, idNextContainer) { //Funcion para oculpar la primera pagina
-    document.getElementById(idNextContainer).style.display = 'block'; 
-    document.getElementById(idHideContainer).style.display = 'none';
+  document.getElementById(idNextContainer).style.display = 'block'; 
+  document.getElementById(idHideContainer).style.display = 'none';
 }
 
 window.nextContainer = nextContainer;
@@ -14,8 +14,8 @@ window.nextContainer = nextContainer;
 //}
 
 function createPokemonItemHTML(pokemonObj) {
-    const name = pokemonObj.name, imgUrl = pokemonObj.img, id = pokemonObj.id; 
-    let HTML = `<div class="pokemon-item-container pokemon" id="pokemon-item-${id}"> 
+  const name = pokemonObj.name, imgUrl = pokemonObj.img, id = pokemonObj.id; 
+  let HTML = `<div class="pokemon-item-container pokemon" id="pokemon-item-${id}"> 
     <div class="pokemon-item-img">
     <img src="${imgUrl}" alt=${name}"></div>
     <div class="pokemon-item-name">     
@@ -24,53 +24,49 @@ function createPokemonItemHTML(pokemonObj) {
     <button class="pokemon-button" data-pokemon-id="${id}">Ficha</button>
     </div>`; //plantilla de cadena de texto// 
 
-    return HTML;
+  return HTML;
 }
 
 function addPokemonHTMLToMainContainer(HTML) {
-    document.getElementById('pokemon-listing').innerHTML = HTML;
+  document.getElementById('pokemon-listing').innerHTML = HTML;
 }
 
 function showAllPokemon() {
-    let pokemonHTML = '';
-    data.pokemon.forEach((pokemonObj) => {
-        //console.log(pokemonObj);
-        //console.log(createPokemonItemHTML(pokemonObj));
-        pokemonHTML += createPokemonItemHTML(pokemonObj);
-    });
+  let pokemonHTML = '';
+  data.pokemon.forEach((pokemonObj) => {
 
-    addPokemonHTMLToMainContainer(pokemonHTML); 
+    pokemonHTML += createPokemonItemHTML(pokemonObj);
+  });
+
+  addPokemonHTMLToMainContainer(pokemonHTML); 
 }
 
 function initial() {
-//console.log(data.pokemon);
-showAllPokemon();
+
+  showAllPokemon();
 }
 
 window.initial = initial;
 initial();
 
 
+function obtenerPokemon(elemento) {
+  let id = Number(elemento.getAttribute('data-pokemon-id'));
+  return id - 1;
+}
 
 
-function obtenerPokemon( elemento ) {
-    let id = Number( elemento.getAttribute('data-pokemon-id') );
-    return id - 1;
-  }
-  
-  
-  function showModal( evento ) {
-  
-    let pokemonID = obtenerPokemon( evento.currentTarget );
-    let dataPokemon;
-    let modalContent = document.getElementById('modal-content');
-    let modal = document.getElementById('modal')
-  
-    fetch(
-      'data/pokemon/pokemon.json').then( function (response) {
-      if (response.ok) {
+function showModal(evento) {
+  let pokemonID = obtenerPokemon (evento.currentTarget);
+  let dataPokemon;
+  let modalContent = document.getElementById('modal-content');
+  let modal = document.getElementById('modal')
+
+  fetch(
+    'data/pokemon/pokemon.json').then(function(response) {
+   if (response.ok) {
         return response.json();
-      }
+    }
     }).then( function (response) {
       dataPokemon = response.pokemon[pokemonID];
       modalContent.innerHTML = `
@@ -83,29 +79,24 @@ function obtenerPokemon( elemento ) {
       <p class="type"> Tipo: ${ dataPokemon.type.join(', ') }</p>
       <p class="weaknesses">Debilidades: ${dataPokemon.weaknesses.join(', ')}</p>
       </div>
-      
+
       <div class="right">
       <img class="image-pokemon" src="${dataPokemon.img}">
       </div>
       `;
     });
-  
-    modal.style.display = 'block';
-  
-  }
-  
-  let pokemonButton = document.querySelectorAll('.pokemon-button');
-  pokemonButton.forEach( elemento => {
-    elemento.addEventListener( 'click', showModal );
-  });
+
+modal.style.display = 'block';
+}
+
+let pokemonButton = document.querySelectorAll('.pokemon-button');
+pokemonButton.forEach( elemento => {
+  elemento.addEventListener('click', showModal);
+});
 
 
-
-  let span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("close")[0];
 
   span.onclick = function() {
-    modal.style.display = "none";
-  }
-
-  
-
+  modal.style.display = "none";
+}
